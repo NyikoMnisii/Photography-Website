@@ -13,6 +13,8 @@
         }
 
         body, html {
+            margin: 0;
+            padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
             color: white;
@@ -102,21 +104,31 @@
             transform: scale(1.1);
         }
 
-        /* Background Styling */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('Images/WhatsApp\ Image\ 2025-01-02\ at\ 14.47.58_e2afebee.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter: blur(10px) brightness(0.5); /* Adds blur and darkens background */
-            z-index: 1;
-        }
+        .background-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Black border color */
+    padding: 10px; /* Border thickness */
+    box-sizing: border-box;
+}
+
+.background-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/WhatsApp\ Image\ 2025-01-02\ at\ 14.47.58_e2afebee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(10px) brightness(0.5); /* Adds blur and darkens background */
+    z-index: -1;
+}
 
         /* Animations */
         @keyframes fadeIn {
@@ -149,11 +161,31 @@
                 opacity: 1;
             }
         }
+
+        @media (max-width: 768px) {
+        .profile-image {
+            width: 200px;
+            height: 200px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .link-item button {
+            font-size: 16px;
+            padding: 6px 12px;
+        }
+
+        .social-icon {
+            font-size: 14px;
+        }
+    }
     </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="background-frame"> <div class="container">
         <div class="profile-section">
             <img src="Images/image 2.jpg" alt="Possible Graphiks M9:23" class="profile-image">
             <h1>Possible Graphiks M9:23</h1>
@@ -180,5 +212,7 @@
             </a>
         </div>
     </div>
+</div>
+   
 </body>
 </html>
