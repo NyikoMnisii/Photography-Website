@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography portfolio showcasing stunning visuals.">
+    <title>Possible Graphiks</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Possible Graphiks M9:23</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white text-center d-flex align-items-center" 
+    style="background-image: url('Images/Image 2.jpg'); height: 100vh; background-size: cover; background-position: center; background-attachment: fixed; position: relative; z-index: 1;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 class="display-3" data-aos="fade-up">Welcome to Possible Graphiks</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="300">Capturing the moments that captivate your heart.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="500">Get in Touch</a>
+            <a href="services.html" class="btn btn-outline-light btn-lg mt-4 ml-3" data-aos="fade-up" data-aos-delay="700">View Our Services</a>
+        </div>
+    </header>
+
+ <!-- Portfolio Carousel Section -->
+<section class="portfolio py-5">
+    <div class="container">
+        <!-- Portfolio Introduction -->
+        <div class="text-center mb-4" data-aos="fade-up">
+            <h1>My Photography Portfolio</h1> <!-- Use H1 for the main page heading -->
+            <p>Explore a curated selection of my professional photography work. Specializing in landscape, portrait, and creative photography, these shots reflect my attention to detail and passion for capturing the perfect moment.</p>
+        </div>
+
+        <!-- Portfolio Carousel -->
+        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="3"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="4"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-aos="fade-up">
+                    <a href="Images/Image 5.jpg" data-lightbox="portfolio">
+                        <img src="Images/Image 5.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 1">
+                    </a>
+                </div>
+                <div class="carousel-item" data-aos="fade-up">
+                    <a href="Images/Image 4.jpg" data-lightbox="portfolio">
+                        <img src="Images/Image 4.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 2">
+                    </a>
+                </div>
+                <div class="carousel-item" data-aos="fade-up">
+                    <a href="Images/Image 3.jpg" data-lightbox="portfolio">
+                        <img src="Images/Image 3.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 3">
+                    </a>
+                </div>
+                <div class="carousel-item" data-aos="fade-up">
+                    <a href="Images/IMG_2926.jpg" data-lightbox="portfolio">
+                        <img src="Images/IMG_2926.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 3">
+                    </a>
+                </div>
+                <div class="carousel-item" data-aos="fade-up">
+                    <a href="Images/IMG_3218.jpg" data-lightbox="portfolio">
+                        <img src="Images/IMG_3218.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 3">
+                    </a>
+                </div>
+                <div class="carousel-item" data-aos="fade-up">
+                    <a href="Images/IMG_5663.jpg" data-lightbox="portfolio">
+                        <img src="Images/IMG_5663.jpg" class="d-block w-100 carousel-image lazyload" alt="Portfolio Image 3">
+                    </a>
+                </div>
+                <!-- Add more items as necessary -->
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Possible Graphiks. All Rights Reserved. Designed by <a href="https://disenadigitals.co.za" target="_blank">Disena Digitals</a></p>
+            <!-- Social Icons -->
+            <div class="social-icons d-flex justify-content-center">
+                <a href="https://facebook.com" target="_blank" class="mx-3">
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+                <a href="https://wa.me/your-whatsapp-number" target="_blank" class="mx-3">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@possiblegraphiks2?_t=8qZNjeu8q97&_r=1" target="_blank" class="mx-3">
+                    <i class="fab fa-tiktok fa-2x"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="mx-3">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
